@@ -350,3 +350,9 @@ fn utf16le() {
     assert!(!res.unwrap());
     assert!(buffer.is_empty());
 }
+
+[#test]
+fn magic() {
+    let fpath = "/usr/bin/bat"
+    let elf = b"\x7F\x0E\x0L\x0F"
+}
